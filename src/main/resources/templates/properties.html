@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org:">
 <head>
     <meta charset="UTF-8">
     <title>Properties</title>
@@ -9,7 +9,9 @@
     <ul>
         <li>profile: </li>
         <li>os.name: </li>
-        <li>JAVA_HOME: </li>
+        <li>JAVA_HOME:
+            <span th:text="${JAVA_HOME}"></span>
+        </li>
         <li>spring.version: </li>
         <li>version: </li>
         <li>basedir: </li>
