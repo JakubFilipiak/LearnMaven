@@ -15,11 +15,14 @@ public class PropertiesService {
     private static final String TEST_PROFILE_NAME = "test";
     private static final String PROD_PROFILE_NAME = "production";
 
-    @Value("${filtered.property:undefined}")
-    private String myFilteredPropertyValue;
-
     @Value("${spring.version:undefined}")
     private String springVersion;
+
+    @Value("${version:undefined}")
+    private String version;
+
+    @Value("${filtered.property:undefined}")
+    private String myFilteredPropertyValue;
 
     public PropertiesService(Environment environment) {
         this.environment = environment;
@@ -64,6 +67,10 @@ public class PropertiesService {
 
     public String retrieveSpringVersion() {
         return springVersion;
+    }
+
+    public String retrieveVersion() {
+        return version;
     }
 
     public String retrieveMyFilteredPropertyValue() {
