@@ -15,7 +15,7 @@ public class PropertiesService {
     private static final String TEST_PROFILE_NAME = "test";
     private static final String PROD_PROFILE_NAME = "production";
 
-    @Value("${filteredProp:undefined}")
+    @Value("${filtered.property:undefined}")
     private String myFilteredPropertyValue;
 
     @Value("${spring.version:undefined}")
