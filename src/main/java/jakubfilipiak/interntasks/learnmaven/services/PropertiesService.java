@@ -15,13 +15,13 @@ public class PropertiesService {
     private static final String TEST_PROFILE_NAME = "test";
     private static final String PROD_PROFILE_NAME = "production";
 
-    @Value("${spring.version:undefined}")
+    @Value("${custom.spring.version:undefined}")
     private String springVersion;
 
-    @Value("${version:undefined}")
+    @Value("${custom.version:undefined}")
     private String version;
 
-    @Value("${filtered.property:undefined}")
+    @Value("${custom.filtered.property:undefined}")
     private String myFilteredPropertyValue;
 
     public PropertiesService(Environment environment) {
