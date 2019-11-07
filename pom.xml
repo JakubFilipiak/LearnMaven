@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<spring.version>BOOT 2.2.0.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>

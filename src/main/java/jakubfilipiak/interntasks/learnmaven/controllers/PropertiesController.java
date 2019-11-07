@@ -19,6 +19,7 @@ public class PropertiesController {
         model.addAttribute("profile", propertiesService.retrieveActiveProfileName());
         model.addAttribute("osName", propertiesService.retrieveOsName());
         model.addAttribute("javaHome", propertiesService.retrieveJavaHome());
+        model.addAttribute("springVersion", propertiesService.retrieveSpringVersion());
         model.addAttribute("myFilteredProperty", propertiesService.retrieveMyFilteredPropertyValue());
         return "properties";
     }

@@ -18,6 +18,9 @@ public class PropertiesService {
     @Value("${filteredProp:undefined}")
     private String myFilteredPropertyValue;
 
+    @Value("${spring.version:undefined}")
+    private String springVersion;
+
     public PropertiesService(Environment environment) {
         this.environment = environment;
     }
@@ -57,6 +60,10 @@ public class PropertiesService {
 
     public String retrieveJavaHome() {
         return System.getenv("JAVA_HOME");
+    }
+
+    public String retrieveSpringVersion() {
+        return springVersion;
     }
 
     public String retrieveMyFilteredPropertyValue() {
