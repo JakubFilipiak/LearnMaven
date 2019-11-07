@@ -1,6 +1,6 @@
 package jakubfilipiak.interntasks.learnmaven.controllers;
 
-import jakubfilipiak.interntasks.learnmaven.PropertiesService;
+import jakubfilipiak.interntasks.learnmaven.services.PropertiesService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

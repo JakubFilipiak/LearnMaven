@@ -1,4 +1,4 @@
-package jakubfilipiak.interntasks.learnmaven;
+package jakubfilipiak.interntasks.learnmaven.services;
 
 import org.springframework.stereotype.Service;
 
