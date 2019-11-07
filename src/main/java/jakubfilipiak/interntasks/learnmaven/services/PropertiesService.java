@@ -1,5 +1,6 @@
 package jakubfilipiak.interntasks.learnmaven.services;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,9 @@ public class PropertiesService {
     private static final String DEV_PROFILE_NAME = "development";
     private static final String TEST_PROFILE_NAME = "test";
     private static final String PROD_PROFILE_NAME = "production";
+
+    @Value("${filteredProp:undefined}")
+    private String myFilteredPropertyValue;
 
     public PropertiesService(Environment environment) {
         this.environment = environment;
@@ -53,5 +57,9 @@ public class PropertiesService {
 
     public String retrieveJavaHome() {
         return System.getenv("JAVA_HOME");
+    }
+
+    public String retrieveMyFilteredPropertyValue() {
+        return myFilteredPropertyValue;
     }
 }

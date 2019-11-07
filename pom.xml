@@ -65,6 +65,9 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
 
+		<filters>
+			<filter>src/main/filters/filter.properties</filter>
+		</filters>
+	</build>
 </project>
