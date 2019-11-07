@@ -21,6 +21,9 @@ public class PropertiesService {
     @Value("${project.version:undefined}")
     private String version;
 
+    @Value("${basedir:undefined}")
+    private String basedir;
+
     @Value("${filter.filtered.property:undefined}")
     private String myFilteredPropertyValue;
 
@@ -71,6 +74,10 @@ public class PropertiesService {
 
     public String retrieveVersion() {
         return version;
+    }
+
+    public String retrieveBasedirValue() {
+        return basedir;
     }
 
     public String retrieveMyFilteredPropertyValue() {

@@ -21,6 +21,7 @@ public class PropertiesController {
         model.addAttribute("javaHome", propertiesService.retrieveJavaHome());
         model.addAttribute("springVersion", propertiesService.retrieveSpringVersion());
         model.addAttribute("version", propertiesService.retrieveVersion());
+        model.addAttribute("basedir", propertiesService.retrieveBasedirValue());
         model.addAttribute("myFilteredProperty", propertiesService.retrieveMyFilteredPropertyValue());
         return "properties";
     }
