@@ -16,6 +16,7 @@ public class PropertiesController {
 
     @GetMapping("/properties")
     public String getProperties(Model model) {
+        model.addAttribute("profile", propertiesService.retrieveActiveProfileName());
         model.addAttribute("osName", propertiesService.retrieveOsName());
         model.addAttribute("javaHome", propertiesService.retrieveJavaHome());
         return "properties";
