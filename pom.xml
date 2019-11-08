@@ -69,6 +69,7 @@
 
 		<filters>
 			<filter>src/main/filters/filter.properties</filter>
+			<filter>/src/main/config/{profile}/WEB-INF/web.xml </filter>
 		</filters>
 	</build>
 </project>
